@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+
+    background-color: #252323;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    
+
+}
+
+
+
+
+
+
+
+
+
+@keyframes colorChange {
+    0% { background: linear-gradient(45deg, #846A6A, #353B3C); }
+    25% { background: linear-gradient(45deg, #c6c7c4, #A2999E); }
+    50% { background: linear-gradient(45deg, #EEF0F2, #846A6A); }
+    75% { background: linear-gradient(45deg, #353B3C, #c6c7c4); }
+    100% { background: linear-gradient(45deg, #aa9fa5, #EEF0F2); }
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: colorChange 10s infinite alternate;
+    background-size: 400% 400%;
+    z-index: -1;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 74, 74, 0.651); 
+    z-index: -1;
+    
+  }
+  
+
+.todo-list{
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    color: #EEF0F2;
+    display: flex;
+    min-height: 100vh;
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+
+.maintext{
+    margin-top: -20px;
+    font-size: 78px;
+    padding-top: 15px;
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    
+}
+
+h2{
+  font-size:55px;
+  font-family: "Bebas Neue";
+  font-weight: 300;
+
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: #353B3C;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.267);
+  justify-content: center;
+  margin: 50px auto;
+  position:relative; 
+  margin-top: 50px; 
+  
+  
+}
+
+
+.row{
+  text-align: center;
+  padding-top: 0;
+
+
+}
+
+
+.inputbox{
+  background-color:#846A6A ;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.267);
+  justify-content: center;
+  padding-bottom: 20px;
+
+}
+
+input{
+  margin-top: 20px;
+  border:none;
+  border-radius: 3px;
+  font-size: 30px;
+  background-color: #c6c7c448;
+  width: 90%; 
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.267);
+  
+  
+ 
+
+}
+
+input::placeholder {
+  color: #EEF0F2; 
+  font-weight: bold; 
+  text-align: center;
+  font-size: 27px;
+ 
+
+}
+
+input[type="text"] {
+  font-family: "IBM Plex Sans", serif;
+  font-variation-settings:
+    "wdth" 94.9;
+    font-weight: 657;
+}
+
+
+input:hover{
+  width: 93%;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.267);
+  
+
+}
+
+
+
+.addbutton{
+  margin-top: 10px;
+  border:none;
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: #353b3c8e;
+  width: 13%;
+  color:#EEF0F2 ;
+  margin: 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.267);
+
+
+}
+
+.addbutton:hover{
+  background-color:#C6C7C4 ;
+  color: #252323;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.267);
+
+}
+
+ul {
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+  overflow-y: auto
+}
+
+
+li{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 10px;
+  font-size: 30px;
+  font-family: "IBM Plex Sans", serif;
+  font-variation-settings:
+    "wdth" 94.9;
+    font-weight: 657;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  padding-left: 8px;
+}
+
+.xbutton{
+  border:none;
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: #a2999ecb;
+  width: 8%;
+  color:#353B3C ;
+  margin: 20px;
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  font-family: "Bebas Neue";
+  font-weight: 600;
+  padding: 4px;
+  box-shadow: 0 0.2px 6px rgba(0, 0, 0, 0.267);
+}
+
+.xbutton:hover{
+  border:none;
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: #353B3C;
+  width: 8%;
+  color:#a2999ec2 ;
+  margin: 20px;
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  padding: 4px;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.267);
+
+
+}
+
+@media (max-width: 768px) { 
+  .todo-list {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .container {
+    position: relative; 
+    width: 90%;
+    max-width: 340px;
+    margin-top: 50px; 
+  }
+}
