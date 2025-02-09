@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/joapedrosf/todo-list-react/static/css/main.b54ee904.css",
+    "main.js": "/joapedrosf/todo-list-react/static/js/main.59b5cd93.js",
+    "index.html": "/joapedrosf/todo-list-react/index.html",
+    "main.b54ee904.css.map": "/joapedrosf/todo-list-react/static/css/main.b54ee904.css.map",
+    "main.59b5cd93.js.map": "/joapedrosf/todo-list-react/static/js/main.59b5cd93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b54ee904.css",
+    "static/js/main.59b5cd93.js"
+  ]
+}
